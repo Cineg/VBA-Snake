@@ -1,0 +1,19 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+END
+Attribute VB_Name = "wshBoard"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub btnStart_Click()
+    wshBoard.Cells(2, 35).Activate
+    ModGameClock.StartGame
+End Sub
+
+Private Sub btnStop_Click()
+    ModGame.FinalizeGame
+End Sub
